@@ -1,7 +1,11 @@
 import React from 'react'
+import NavbarItem from './NavbarItem'
 
 export default function Navbar() {
   return (
-    <div>Navbar</div>
+    <div className='flex justify-center  dark:bg-gray-600 bg-amber-100 lg:text-lg p-4'>
+      <NavbarItem title="Trending" param="fetchTrendingMovies"/>
+      <NavbarItem title="Top Rated" param="fetchTopRated"/>
+    </div>
   )
 }
